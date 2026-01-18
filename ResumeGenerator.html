@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Level 6</title>
+</head>
+<body>
+    <h1>Resume Generator</h1>
+    <form action="contact-me.php" method="post"> <!--GET→search, filters POST→forms with personal data-->
+
+        <table>
+        <tr>
+        <td><label for="name"><b>Name:</b></label></td>
+        <td><input type="text" id="name" name="name" placeholder="Enter your name here"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="country"><b>Country:</b></label></td>
+        <td><select id="country" name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option></select></td>
+        </tr>
+        
+        <tr>
+        <td><label for="dob"><b>Date of birth:</b></label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+
+        <tr>
+        <td><label for="pass"><b>Create Password:</b></label></td>
+        <td><input type="password" id="pass" name="password"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="image"><b>Upload a picture of yourself:</b></label></td>
+        <td><input type="file" id="image" name="picture"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="color"><b>Preferred accent color:</b></label>
+            </td>
+            <td>
+                <input type="color" id="color" name="color">
+            </td>
+        </tr>
+
+        <tr>
+             <td>
+                <b>Gender:</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="male"><i>Male:</i></label>
+            </td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="female"><i>Female:</i></label>
+            </td>
+            <td>
+                <input type="radio" id="female" name="gender" value="female">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="other"><i>Other:</i></label>
+            </td>
+            <td>
+                <input type="radio" id="other" name="gender" value="other">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Languages known:</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="cpp"><i>C++</i></label>
+            </td>
+            <td>
+                <input type="checkbox" id="cpp" name="langknown[]" value="cpp"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="java"><i>Java</i></label>
+            </td>
+            <td>
+                <input type="checkbox" id="java" name="langknown[]" value="java"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="python"><i>Python</i></label>
+            </td>
+            <td>
+                <input type="checkbox" id="python" name="langknown[]" value="python"> 
+            </td>
+        </tr>
+
+        </table>
+
+        <label for="summary"><b>Professional Summary</b></label><br>
+        <textarea rows="20" cols="80" id="summary" name="summary" placeholder="Briefly describe your professional background, key skills and career goals."></textarea>
+        <br>
+
+        <input type="submit" value="Submit Details">
+
+    </form>
+
+    <br>
+    <br>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/rklidcZ-aLU?si=V5ftFHAWWyuYTvZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    
+</body>
+</html>
